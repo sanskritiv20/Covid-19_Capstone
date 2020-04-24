@@ -14,7 +14,7 @@ import wget
 # In[5]:
 
 
-get_ipython().system(' rm -rf Data/*.csv # removes the existing csv files')
+get_ipython().system(' rm -rf ../Data/*.csv # removes the existing csv files')
 
 
 # In[8]:
@@ -26,9 +26,9 @@ urls = ['https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_c
         'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv']
 # Credits:
 
-get_ipython().system('cd Data/')
+# get_ipython().system('cd ../Data/')
 for url in urls:
-    wget.download(url,'./Data/')
+    wget.download(url,'../Data/')
     
 # this downloads and stores the .csv files from the urls in the Data folder
 

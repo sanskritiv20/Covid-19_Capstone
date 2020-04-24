@@ -10,9 +10,9 @@ import pandas as pd
 # In[2]:
 
 
-confirmed_df = pd.read_csv('Data/time_series_covid19_confirmed_global.csv')
-recovered_df = pd.read_csv('Data/time_series_covid19_recovered_global.csv')
-deaths_df = pd.read_csv('Data/time_series_covid19_deaths_global.csv')
+confirmed_df = pd.read_csv('../Data/time_series_covid19_confirmed_global.csv')
+recovered_df = pd.read_csv('../Data/time_series_covid19_recovered_global.csv')
+deaths_df = pd.read_csv('../Data/time_series_covid19_deaths_global.csv')
 
 
 # In[18]:
@@ -96,5 +96,5 @@ total_data['Recovered'] = total_data['Recovered'].astype(int)
 
 
 # Let us save this data finally.
-total_data.to_csv('Data/Cleaned_Final_Global_Data.csv',index=False)
+total_data.to_csv('../Data/Cleaned_Final_Global_Data.csv',index=False)
 
